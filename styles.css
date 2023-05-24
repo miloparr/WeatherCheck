@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape')
+}
+
+.card {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 420px;
+    background-color: #073b4cCF;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 40px;
+}
+
+.temperature {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.5em;
+    background-color: #006d778F;
+    fill: #FFFFFF;
+    fill-opacity: 50%;
+    outline: none;
+}
+
+button:hover {
+    background-color: #006d77CC;
+    cursor: pointer;
+}
+
+input.search-bar {
+    background: #006d778F;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 105%;
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    width: calc(100% - 100px);
+}
