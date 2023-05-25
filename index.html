@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
     <title>WeatherCheck</title>
 </head>
 
@@ -23,12 +23,24 @@
                         d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                 </svg></button>
         </div>
-        <div class="weather">
-            <h2 class="city">Weather in Anchorage</h2>
-            <div class="temperature">49°F</div>
-            <div class="description">Showers</div>
-            <div class="wind-speed">0 mph</div>
-            <div class="humidity">78%</div>
+        <div class="measurement">
+            <label>Imperial </label>
+            <label class="switch">
+                <input class="fahr-cels" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <label> Metric</label>
+        </div>
+        <div class="weather loading">
+            <h2 class="city"></h2>
+            <div class="temperature"></div>
+
+            <div class="flex">
+                <div class="description"></div>
+                <img src="" alt="" class="icon">
+            </div>
+            <div class="wind-speed"></div>
+            <div class="humidity"></div>
         </div>
     </div>
 </body>
