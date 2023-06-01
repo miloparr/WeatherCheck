@@ -3,7 +3,7 @@ let tempUnit = '°F';
 let speedUnit = 'mph';
 
 let weather = {
-    apiKey: /*API KEY GOES HERE*/,
+    apiKey: 'c9db34215c9f412b97a10986d1ca24c5',
     fetchWeather: function (location) {
         fetch('https://api.openweathermap.org/data/2.5/weather?q='
             + location + '&units=' + unit + '&appid=' + this.apiKey
